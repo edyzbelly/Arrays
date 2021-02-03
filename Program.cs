@@ -6,15 +6,16 @@ namespace Arrays
     {
         static void Main(string[] args)
         {
-            int[] count = new int[25];
+            const int LENGTH = 26;
+            int[] count = new int[LENGTH];
 
             int pop = 0;
             int i;
 
-            for (i = 0; i < count.Length; i++)
+            for (i = 1; i < LENGTH; i++)
             {
                 count[i] = pop;
-                Console.WriteLine("Element value = " + i + " ");
+                Console.WriteLine("Element value = " + i);
             }
         }
     }
